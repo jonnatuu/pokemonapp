@@ -5,6 +5,9 @@ h5 {
 h3 {
     color: blue;
 }
+body {
+    background-color: rgb(228, 212, 219);
+}
 
 #app {
     font-family: 'Courier New', Courier, monospace;
@@ -16,7 +19,7 @@ h3 {
   }
 
 div.joke {
-    border: solid red;
+    border: 4px solid red;
     padding: 20px;
     display: inline-block;
     background-image: url(https://cdn.pixabay.com/photo/2017/03/25/17/55/color-2174045_960_720.png);
@@ -25,12 +28,14 @@ div.joke {
 
 button {
     font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: bold;
     border: none;
     background-color: rgb(107, 99, 150); 
-    color: black;
+    color: rgb(34, 28, 28);
     padding: 5px;
     margin: 5px;
-    border: 1px solid black;
+    border: 2px dotted rgb(236, 18, 218);
     border-radius: 12px;
 }
 

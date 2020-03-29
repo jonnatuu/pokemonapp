@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script>
+<script type="module">
 import Pokemons from './components/TellJoke.vue'
 
 export default {

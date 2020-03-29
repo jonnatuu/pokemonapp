@@ -4,7 +4,7 @@
             <button class="button" type="button" name="button" @click="charmander()"> Charmander </button>
             <button class="button" type="button" name="button" @click="pikachu()"> Pikachu </button>
             <button class="button" type="button" name="button" @click="bulbasaur()"> Bulbasaur </button><br>
-            <button class="button" type="button" name="button" @click="squirtle()"> Charmander </button>
+            <button class="button" type="button" name="button" @click="squirtle()"> Squirtle </button>
             <button class="button" type="button" name="button" @click="caterpie()"> Caterpie </button>
             <button class="button" type="button" name="button" @click="weedle()"> Weedle </button>
         </div>
@@ -30,7 +30,7 @@ export default {
       },
   methods: {
     charmander: function () {
-        axios.get('https://pokeapi.co/api/v2/pokemon/')
+        axios.get('https://pokeapi.co/api/v2/pokemon/charmander/')
         .then(response => {
         this.img = response.data.sprites.front_default;
         this.nimi = response.data.name;
