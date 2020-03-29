@@ -2,6 +2,6 @@
 
 module.exports = {
 
-    publicPath: 'src/App.vue'
+    publicPath: './src/App.vue'
   
   }
