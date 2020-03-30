@@ -1,12 +1,8 @@
 <template>
     <div class="joke">
-        <div class="navi">
-            <button class="button" type="button" name="button" @click="charmander()"> Charmander </button>
-            <button class="button" type="button" name="button" @click="pikachu()"> Pikachu </button>
-            <button class="button" type="button" name="button" @click="bulbasaur()"> Bulbasaur </button><br>
-            <button class="button" type="button" name="button" @click="squirtle()"> Squirtle </button>
-            <button class="button" type="button" name="button" @click="caterpie()"> Caterpie </button>
-            <button class="button" type="button" name="button" @click="weedle()"> Weedle </button>
+        <div class="form-inline justify-content-center mt-4 mb-1">
+                  <input type="text" v-model="nimi" class="form-control" placeholder="Anna pokemonin nimi" >
+                  <button v-on:click="search" type="submit" class="btn btn-light ml-1 text-black">Search</button>  
         </div>
         <div class="kuvat">
             <h4>Nimi: {{ nimi }}</h4>
@@ -29,15 +25,15 @@ export default {
       }
       },
   methods: {
-    charmander: function () {
-        axios.get('https://pokeapi.co/api/v2/pokemon/charmander/')
+    search: function () {
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${this.nimi}`)
         .then(response => {
         this.img = response.data.sprites.front_default;
         this.nimi = response.data.name;
         this.url =response.data.id;
         })
     },
-    pikachu: function () {
+    /* pikachu: function () {
         axios.get('https://pokeapi.co/api/v2/pokemon/pikachu/')
         .then(response => {
         this.img = response.data.sprites.front_default;
@@ -76,7 +72,7 @@ export default {
         this.nimi = response.data.name;
         this.url =response.data.id;
         })
-    }
+    } */
     }
 }
 
