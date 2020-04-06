@@ -1,24 +1,5 @@
 # vueappi
 
-## Project setup
-```
-npm install
-```
+https://dos.seamk.fi/~epedu+k1400973/pokemonapp/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Pokemonapp, jossa hyödynnetty avointa dataa https://pokeapi.co/ lähteestä. Toteutettu vue.js-frameworkilla. 
